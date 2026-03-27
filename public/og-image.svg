@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="og-title">
+  <title id="og-title">Bitcoin 101</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff4e8"/>
+      <stop offset="55%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fde8d0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1050" cy="120" r="180" fill="#f7931a" opacity="0.12"/>
+  <circle cx="140" cy="520" r="220" fill="#f7931a" opacity="0.08"/>
+  <text x="600" y="280" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="72" font-weight="600" fill="#1a1a1c">Bitcoin 101</text>
+  <text x="600" y="360" text-anchor="middle" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="28" font-weight="400" fill="#5c5c61">Learn Bitcoin · Curated resources</text>
+  <text x="600" y="430" text-anchor="middle" font-family="ui-monospace, monospace" font-size="22" fill="#e8850f">?</text>
+</svg>

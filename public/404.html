@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5f5f4" />
+    <title>Page not found · Bitcoin 101</title>
+    <link rel="icon" type="image/svg+xml" href="/bitcoin.svg" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        font-family:
+          Inter,
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          sans-serif;
+        background: linear-gradient(180deg, #fff4e8 0%, #f5f5f4 45%, #ffffff 100%);
+        color: #1a1a1c;
+      }
+      h1 {
+        font-size: clamp(1.5rem, 4vw, 2rem);
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        margin: 0 0 0.5rem;
+      }
+      p {
+        max-width: 28rem;
+        margin: 0 0 1.5rem;
+        color: #5c5c61;
+        line-height: 1.5;
+        text-align: center;
+      }
+      a {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+        padding: 0.65rem 1.25rem;
+        border-radius: 9999px;
+        background: #f7931a;
+        color: #fff;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background 0.15s ease;
+      }
+      a:hover {
+        background: #e8850f;
+      }
+      .glyph {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        opacity: 0.9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="glyph" aria-hidden="true">₿</div>
+    <h1>This block isn’t in the chain</h1>
+    <p>The page you’re looking for doesn’t exist or moved. Head back to Bitcoin 101 to keep learning.</p>
+    <a href="/">Back to Bitcoin 101</a>
+  </body>
+</html>
