@@ -1,8 +1,10 @@
+import { publicUrl } from "../lib/publicUrl";
+
 /** Wikipedia “Bitcoin” logo (File:Bitcoin.svg). Orange ₿ mark. */
 export function BitcoinLogo({ className = "h-9 w-9" }: { className?: string }) {
   return (
     <img
-      src="/bitcoin.svg"
+      src={publicUrl("bitcoin.svg")}
       alt=""
       width={64}
       height={64}

@@ -3,6 +3,7 @@ import { books, podcasts, posts, videoSectionSocial } from "../data/bioSiteResou
 import { conferences2026Sorted, curatedLinks, hardwareItems } from "../data/resourcesMore";
 import { linkFaviconUrl, linkThumbnailUrl } from "../lib/linkPreview";
 import { spotifyShowEmbedSrc, tweetIdFromStatusUrl } from "../lib/socialEmbeds";
+import { publicUrl } from "../lib/publicUrl";
 import { SectionTitle } from "./SectionTitle";
 import { TwitterWidgetEmbed } from "./TwitterWidgetEmbed";
 
@@ -26,7 +27,7 @@ function CuratedLinkThumb({ pageUrl, previewImageUrl }: { pageUrl: string; previ
             setSrc(linkThumbnailUrl(pageUrl));
             return;
           }
-          if (previewImageUrl === "/bitcoin.svg" && src === "/bitcoin.svg") {
+          if (previewImageUrl === publicUrl("bitcoin.svg") && src === publicUrl("bitcoin.svg")) {
             if (fav) {
               triedFav.current = true;
               setSrc(fav);

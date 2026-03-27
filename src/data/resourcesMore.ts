@@ -2,6 +2,8 @@
  * Curated links, hardware, conferences. Conference figures are approximate; confirm on official sites.
  */
 
+import { publicUrl } from "../lib/publicUrl";
+
 export type CuratedLink = {
   title: string;
   url: string;
@@ -48,7 +50,7 @@ const curatedLinksUnsorted: CuratedLink[] = [
     url: "https://www.hope.com/",
     description: "Bitcoin as digital property. Treasury and institutional framing.",
     popularity: 6,
-    previewImageUrl: "/bitcoin.svg",
+    previewImageUrl: publicUrl("bitcoin.svg"),
   },
   {
     title: "Gradually, Then Suddenly (blog series)",
@@ -81,28 +83,28 @@ export const hardwareItems: HardwareItem[] = [
     name: "Bitkey",
     url: "https://bitkey.world/",
     priceLabel: "From ~$150 USD",
-    imageSrc: "/hardware/bitkey.webp",
+    imageSrc: publicUrl("hardware/bitkey.webp"),
     imageAlt: "Bitkey hardware wallet device",
   },
   {
     name: "Trezor",
     url: "https://trezor.io/",
     priceLabel: "From ~$179 USD (model varies)",
-    imageSrc: "/hardware/trezor.svg",
+    imageSrc: publicUrl("hardware/trezor.svg"),
     imageAlt: "Trezor hardware wallet (illustration)",
   },
   {
     name: "Ledger",
     url: "https://www.ledger.com/",
     priceLabel: "From ~$179 USD (model varies)",
-    imageSrc: "/hardware/ledger.png",
+    imageSrc: publicUrl("hardware/ledger.png"),
     imageAlt: "Ledger hardware wallet device",
   },
   {
     name: "BLOCKCLOCK mini",
     url: "https://blockclockmini.com/",
     priceLabel: "From ~$399 USD",
-    imageSrc: "/hardware/blockclock-mini.png",
+    imageSrc: publicUrl("hardware/blockclock-mini.png"),
     imageAlt: "BLOCKCLOCK mini Bitcoin display",
   },
 ];
