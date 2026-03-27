@@ -28,8 +28,6 @@ jobs:
           cache: npm
 
       - name: Install and build
-        env:
-          GITHUB_PAGES_BASE: "1"
         run: |
           npm ci
           npm run build

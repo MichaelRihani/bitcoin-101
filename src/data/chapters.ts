@@ -17,17 +17,17 @@ export const chapters: Chapter[] = [
   {
     id: "money",
     title: "Money and why it matters",
-    subtitle: "What money does, how today’s money works, and where Bitcoin fits in.",
+    subtitle: "What money does, how it keeps changing, and where Bitcoin fits in.",
     takeaways: [
       "Money does three jobs: trade, pricing, and saving. No form of money does all three perfectly.",
-      "Most money today is digital. Policy can change supply and borrowing costs; savings don’t always keep pace.",
-      "Bitcoin’s rules are fixed in code: no company, predictable issuance, nothing past the cap.",
+      "What counts as money has shifted for thousands of years: salt, stones, shells, metal, paper, and mostly digits today.",
+      "Bitcoin proposes fixed rules in software: predictable issuance, no company printing past the cap. Whether that helps people everywhere is something each person has to weigh.",
     ],
     basics: [
-      "People have used shells, metal, coins, and paper for thousands of years. Useful money is easy to recognize, split, move, and scarce enough that it holds value.",
-      "Today, most money is entries on ledgers at banks and central banks. That works for cards, payroll, and credit. The amount of money and the cost of borrowing can still change with policy, crises, and time.",
+      "You might picture coins and notes, but money has taken many forms: salt, stones, seashells, metal, paper, and entries on bank ledgers. Useful money is easy to recognize, split, move, and scarce enough that it holds value.",
+      "Today most money is digital. Banks and central banks run the plumbing for cards, payroll, and credit. Policy can change supply and borrowing costs; savings don’t always keep pace with prices.",
       "When people talk about inflation, they mean the same dollars buying less over time. How much is “too much” is debated; the trade-off is familiar: flexibility today versus knowing what savings will buy tomorrow.",
-      "Bitcoin is a different idea: shared rules, software anyone can run, a known supply schedule, and no single issuer who can change the rules.",
+      "Bitcoin is another chapter in a long story: open software, shared rules, and no single issuer who can change the supply. People argue about many things, including whether it can make value easier to move across borders and whether open networks can lead to fairer access over time. This site doesn’t promise outcomes; it explains how the system is designed.",
     ],
     mediaSlots: [
       {
@@ -53,17 +53,18 @@ export const chapters: Chapter[] = [
   {
     id: "what-is-bitcoin",
     title: "What is Bitcoin?",
-    subtitle: "The network, the asset, and the ideas that started it.",
+    subtitle: "Digital money, the network behind it, and how it differs from cash in your pocket.",
     takeaways: [
-      "Bitcoin (capital B) is the network; bitcoin (BTC) is units tracked on that network.",
-      "You don’t need permission to use the protocol. No one has to approve an account.",
+      "Bitcoin (capital B) is the network; bitcoin (BTC) is the asset you send, spend, or save. It is entirely digital.",
+      "A blockchain is a shared record: many computers check the same rules so transactions can settle without a bank in the middle.",
+      "You can hold keys yourself: no application from a bank, and no CEO who can flip a switch on “your” bitcoin the way a bank can freeze an account.",
       "Scarcity is built in: about 21 million BTC, ever. Code enforces it, not a board vote.",
     ],
     basics: [
       "Satoshi Nakamoto’s whitepaper described “A Peer-to-Peer Electronic Cash System.” Software nodes follow the same rules, so payments can settle without a trusted middleman. No bank has to sign off.",
-      "You send BTC to a Bitcoin address. After a transaction is confirmed, there is no chargeback in the traditional sense. Finality is a feature: get the address right.",
-      "People say “Bitcoin” for the project and “bitcoin” or BTC for the asset, like “email” (the system) and “an email” (one message).",
-      "Bitcoin is often lumped in with “crypto.” For beginners, the useful split is simple: Bitcoin is one protocol with a long history and open development, focused on decentralized money. It isn’t a stand-in for every other token.",
+      "BTC is 100% digital. You use a wallet to send and receive; after a transaction confirms, there is no chargeback in the traditional sense. Finality is a feature: get the address right.",
+      "People use bitcoin to send value across distances, to save for the long term, or to spend where it is accepted. You interact through the internet, on your own schedule. What you can do still depends on local law and who will accept it.",
+      "People say “Bitcoin” for the project and “bitcoin” or BTC for the asset, like “email” (the system) and “an email” (one message). Bitcoin is one specific protocol with a long history; it isn’t shorthand for every other token people call “crypto.”",
     ],
     mediaSlots: [
       {
@@ -81,25 +82,20 @@ export const chapters: Chapter[] = [
   {
     id: "technology",
     title: "How Bitcoin works",
-    subtitle: "Blocks, transactions, mining, and why changing the past is hard.",
+    subtitle: "The Bitcoin network, the blockchain, and why changing the past is hard.",
     takeaways: [
-      "The blockchain is a public chain of blocks. Each block links to the one before it.",
-      "Miners compete to publish the next block; fees and new coins pay for that work.",
-      "About every four years, the new-coin reward halves. Over time, fees carry most of the security budget.",
+      "The Bitcoin network is a digital system: nodes share a single rulebook for valid transactions and blocks.",
+      "The blockchain is a chain of blocks: each block links to the one before. Many machines re-check the history so one player can’t quietly rewrite it.",
+      "Miners compete to publish the next block; fees and new coins pay for that work. About every four years, the new-coin reward halves.",
     ],
     basics: [
-      "Transactions are broadcast to the network and wait in the mempool. Miners bundle them into a block that references the previous block’s fingerprint. That’s the chain.",
+      "Transactions are broadcast and wait in the mempool. Miners bundle them into a block that references the previous block’s fingerprint. That’s the chain: a public, ordered record of transfers.",
       "Proof-of-work means miners spend energy to find a hash that satisfies the rules. Rewriting old blocks is expensive because an attacker would have to redo the work faster than the rest of the network.",
-      "Anyone can run a full node to verify every rule, without mining. That’s how users stay off any single company’s servers.",
+      "Cryptography secures ownership: private keys prove you can spend, and the protocol uses math (hashes, signatures) so rules are enforced in code, not by someone’s discretion.",
+      "Anyone can run a full node to verify every rule, without mining. That’s how users stay independent of any single company’s servers.",
       "Energy use comes up a lot. Mining is a competitive industry that often chases cheap or stranded power. Whether that trade-off is worth it is a values question; the energy is paying for security and for ordering transactions.",
     ],
-    mediaSlots: [
-      {
-        kind: "youtube",
-        id: "xLYYh4aPXAM",
-        title: "Bitcoin is protecting human rights around the world",
-      },
-    ],
+    mediaSlots: [],
   },
   {
     id: "wallets",
@@ -121,16 +117,17 @@ export const chapters: Chapter[] = [
   {
     id: "using",
     title: "Using and getting bitcoin",
-    subtitle: "Buying, sending, fees, and what to expect in the real world.",
+    subtitle: "Buying, sending, fees, and why some people value the asset.",
     takeaways: [
       "On-chain sends are irreversible. Double-check the address and amount.",
       "Fees go up when many people transact at once; time of day and week can matter.",
-      "People use bitcoin for savings, remittances, and payments, depending on country and law.",
+      "There will only ever be about 21 million BTC. That fixed cap is why some people compare bitcoin to scarce commodities and think in years, not days.",
+      "People use bitcoin for savings, remittances, and payments, depending on country and law. Price is volatile; nothing here is investment advice.",
     ],
     basics: [
       "Sending BTC means broadcasting a transaction to the network. Miners include it in a block; more blocks after yours generally mean stronger finality.",
       "You might buy on a regulated exchange, earn it, or use a Bitcoin ATM where legal. Home mining is rarely profitable for individuals. Most people get BTC by buying or earning.",
-      "Price moves a lot compared to many national currencies. Some people hold long-term; others use small amounts to learn. Neither is “correct.” It depends on goals and risk tolerance.",
+      "Some people treat bitcoin as a long-term position in a technology they believe will keep changing how the world moves and stores value. Others use small amounts to learn. Price moves a lot compared to many national currencies. Neither approach is “correct.” It depends on goals and risk tolerance.",
       "Tax and reporting rules vary by country. This site doesn’t give tax or legal advice. If you’re unsure, ask a professional in your jurisdiction.",
     ],
     mediaSlots: [],
