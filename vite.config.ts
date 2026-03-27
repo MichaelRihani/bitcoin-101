@@ -93,11 +93,16 @@ function createCoingeckoMiddleware(apiKey: string) {
   };
 }
 
+/** GitHub project Pages URL is https://<user>.github.io/<repo>/ — set in CI via GITHUB_PAGES_BASE. */
+const pagesBase =
+  process.env.GITHUB_PAGES_BASE === "1" ? "/bitcoin-101/" : "/";
+
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), "");
   const coingeckoKey = env.COINGECKO_API_KEY ?? "";
 
   return {
+    base: pagesBase,
     plugins: [react(), coingeckoProxyPlugin(coingeckoKey)],
   };
 });
