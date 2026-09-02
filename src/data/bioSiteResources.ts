@@ -7,7 +7,7 @@
 
 export const bioProfile = {
   name: "Michael Rihani",
-  tagline: "Bitcoin & Blockchain @ Nubank | ex-Tesla, Apple Pay, Coinbase",
+  tagline: "Digital Assets @ Nubank | ex-Tesla, Apple Pay, Coinbase",
   imageUrl: "https://media.bio.site/sites/5ba51d1d-5725-4235-ad8b-9064dc3857d1/e7kEDgo6rDz9nst39HMyxL.jpg",
   xUrl: "https://x.com/michaelrihani",
   linkedInUrl: "https://www.linkedin.com/in/michaelrihani/",
